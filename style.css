@@ -4,13 +4,20 @@
   font-family: "Courier New", monospace;
 }
 
+body {
+  background-color: #252526;
+}
+
+body.lightMode {
+  background-color: white;
+}
+
 .mainContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 880px;
   width: 100%;
-  background-color: #252526;
 }
 
 .facePic {
@@ -23,13 +30,14 @@
   margin: 30px;
 }
 
+.facePic.lightMode {
+  border: 3px solid #90a4ae;
+  background-color: #cfd8dc;
+}
+
 .linkPill {
   width: 300px;
   height: auto;
-  border: 3px solid #007acc;
-  border-radius: 15px;
-  background: #3e3e42;
-  color: white;
   margin: 15px;
   padding: 15px;
   text-align: center;
@@ -38,13 +46,56 @@
   justify-content: center;
 }
 
+.linkLogo {
+  padding-right: 15px;
+  width: 24px;
+  height: 24px;
+}
+
 h1 {
   margin-bottom: 10px;
   color: white;
 }
 
-.linkLogo {
-  padding-right: 15px;
-  width: 24px;
-  height: 24px;
+button.linkPill {
+  background-color: #3e3e42;
+  color: black;
+  border: none;
+  box-shadow: 0px 5px 10px black;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+button.linkPill:hover {
+  box-shadow: 0px 15px 25px -5px #007acc;
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+button.linkPill:active {
+  box-shadow: 0px 4px 8px #007acc;
+  transform: scale(0.98);
+}
+
+button.linkPill.lightMode {
+  background-color: white;
+  border: none;
+  box-shadow: 0px 5px 10px black;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+button.linkPill.lightMode:hover {
+  box-shadow: 0px 15px 25px -5px #007acc;
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+button.linkPill.lightMode:active {
+  box-shadow: 0px 4px 8px #007acc;
+  transform: scale(0.98);
 }

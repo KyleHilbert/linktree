@@ -8,26 +8,47 @@
     <script src="javascript.js" refer></script>
     <title>Kyle Hilbert Linktree</title>
   </head>
-  <body id="gradient">
+  <body>
     <div class="mainContainer">
       <section class="facePic"></section>
       <h1 class="fullName">Kyle Hilbert</h1>
-      <section class="linkPill">
+      <button
+        class="linkPill"
+        onclick="window.open('https://github.com/KyleHilbert','_blank')"
+        type="button"
+      >
         <img class="linkLogo" src="images/github-logo.png" alt="github logo" />
         <span class="linkName">Github</span>
-      </section>
-      <section class="linkPill">
+      </button>
+
+      <button
+        class="linkPill"
+        onclick="window.open('https://www.linkedin.com/in/kyle-hilbert-76509612b?trk=people-guest_people_search-card','_blank')"
+        type="button"
+      >
         <img class="linkLogo" src="images/linkedin.png" alt="linkedin logo" />
-        <span class="linkName">Linkedin</span>
-      </section>
-      <section class="linkPill">
-        <img class="linkLogo" src="images/code (1).png" alt="code image" />
+        <span class="linkName">linkedin</span>
+      </button>
+
+      <button
+        class="linkPill"
+        onclick="window.open('https://github.com/KyleHilbert','_blank')"
+        type="button"
+      >
+        <img class="linkLogo" src="images/code (1).png" alt="portfolio logo" />
         <span class="linkName">Portfolio</span>
-      </section>
-      <section class="linkPill">
-        <img class="linkLogo" src="images/resume.png" alt="resume image" />
+      </button>
+
+      <button
+        class="linkPill"
+        onclick="window.open('https://github.com/KyleHilbert','_blank')"
+        type="button"
+      >
+        <img class="linkLogo" src="images/resume.png" alt="resume logo" />
         <span class="linkName">Resume</span>
-      </section>
+      </button>
+
+      <button onclick="darkLight()"">toggle</button>
     </div>
   </body>
 </html>
